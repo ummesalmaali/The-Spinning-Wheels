@@ -1,0 +1,21 @@
+.ridersVehicles{
+    display: flex;
+    justify-content: space-around;
+}
+.ridersVehicles .vehicles{
+width: 200px;
+background: gray;
+text-align: center;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.ridersVehicles .vehicles img{
+width: 100px;
+}
+.ridersVehicles .vehicles h3{
+position: relative;
+top: 30px;
+}

@@ -1,0 +1,46 @@
+.signUpArea{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.signUpArea .input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+.signUpArea .signUpBtn{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px 0;
+}
+.signUpArea .googleFbLogIn .divider{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+ }
+ .googleFbLogIn .divider .lsHr, .googleFbLogIn .divider .rsHr{
+ width: 120px;
+ height: 1px;
+ background: black;
+ margin: 0 10px;
+ }
+ .googleLogIn,.fbLogIn{
+     position: relative;
+     background: gray;
+     margin: 10px 0;
+     padding: 5px 0;
+     border-radius: 25px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .googleLogIn img, .fbLogIn img{
+     width:30px;
+     position: absolute;
+     left: 10px;
+     cursor: pointer;
+ }
+ .googleLogIn span, .fbLogIn span{
+     color: white;
+ }
