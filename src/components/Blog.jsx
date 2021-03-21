@@ -5,7 +5,7 @@ function Blog() {
     return (
         <div>
             <NavBar></NavBar>
-            <h1 className='text-center'>Read Details Here</h1>
+            <h1 className='text-center'>Read Blog Here</h1>
         </div>
     )
 }

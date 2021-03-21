@@ -122,7 +122,7 @@ const {from}= location.state || { from: {pathname:'/'}};
           <div className="recoverArea">
             <div className="rememberCheck">
               <input type="checkbox" />
-              <label>Remember Me</label>
+              <label>Remember me</label>
             </div>
             <div className="forgotPassword?">
               <a href="#">Forgot Password?</a>

@@ -16,6 +16,7 @@ import Ride from './Ride';
 import Contact from './Contact';
 import PrivateRoute from './PrivateRoute';
 import Blog from './Blog';
+import RideDetails from './RideDetails';
 export const UserContext = createContext()
 if(firebase.apps.length ===0){
     firebase.initializeApp(firebaseConfig);
@@ -48,6 +49,9 @@ export default function App() {
                   </Route>
                   <Route path='/contact'>
                      <Contact/>
+                  </Route>
+                  <Route path='/rideDetails'>
+                     <RideDetails/>
                   </Route>
                   <PrivateRoute path='ride/:rideType'>
                      <Destination/>
