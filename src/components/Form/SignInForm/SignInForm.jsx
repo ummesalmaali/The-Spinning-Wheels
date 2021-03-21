@@ -6,7 +6,11 @@ import "./SignInForm.css";
 import firebase from "firebase/app";
 import "firebase/auth";
 import {} from '../../App'
+import { Link, useHistory, useLocation } from "react-router-dom";
 function SignInForm() {
+const history = useHistory()
+const location = useLocation()
+const {from}= location.state || { from: {pathname:'/'}};
   const [user,setUser] = useState({
     isSignedIn:false,
     name:'',
@@ -31,6 +35,7 @@ function SignInForm() {
           photo:photoURL,
         }
       setUser(signedInUser);
+      history.replace(from);
       })
       .catch((error) => {
         var errorCode = error.code;
@@ -117,7 +122,7 @@ function SignInForm() {
           <div className="recoverArea">
             <div className="rememberCheck">
               <input type="checkbox" />
-              <label>Remember me</label>
+              <label>Remember Me</label>
             </div>
             <div className="forgotPassword?">
               <a href="#">Forgot Password?</a>
@@ -125,7 +130,7 @@ function SignInForm() {
           </div>
           <input className="signInBtn" type="submit" value="Login" />
           <p>Don't have an Account?</p>
-          <a href="#">Create an account</a>
+          <Link to='/signUpForm'><a href="#">Create an account</a></Link>
           </form>
           <p style={{color:'red'}}>{user.error}</p>
           {user.success && <p style={{color:'green'}}>User created successfully</p>}

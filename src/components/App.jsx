@@ -49,9 +49,9 @@ export default function App() {
                   <Route path='/contact'>
                      <Contact/>
                   </Route>
-                  <Route path='ride/:rideType'>
-                     <Home/>
-                  </Route>
+                  <PrivateRoute path='ride/:rideType'>
+                     <Destination/>
+                  </PrivateRoute>
                     <Route exact path='/'>
                      <Home/>
                     </Route>

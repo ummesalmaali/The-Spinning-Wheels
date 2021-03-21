@@ -5,6 +5,7 @@ import fbIcon from "../../../images/socialIcon/fbIcon.png";
 import firebase from "firebase/app";
 import "firebase/auth";
 import "./SignUpForm.css";
+import { Link } from "react-router-dom";
 
 function SignUpForm() {
   const [user,setUser] = useState({
@@ -130,7 +131,7 @@ function SignUpForm() {
             value="Create an account"
           />
           <p>Already have an Account?</p>
-          <a href="#">Log In</a>
+          <Link to='/signInForm'>Log In</Link>
         </form>
         {user.success && <p style={{color:'green'}}>User created successfully</p>}
         <div className="googleFbLogIn">

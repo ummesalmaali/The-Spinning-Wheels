@@ -4,11 +4,12 @@ import './NavBar.css'
 import bg from '../../images/bgImg/Bg.png'
 const NavBar = () => {
     return (
-        <div style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.5)),url(${bg})`}}>
-            <div className='navBar'>
+            <div style={{backgroundImage:`url(${bg})`}}> 
+                <div className='navBar'>
             <div className="brand">
                 <h3 style={{color:'orange'}}> The Spinning Wheels</h3>
             </div>
+            <div  >
             <ul className="nav">
                 <li className='navItem'>
                     <Link to ='/home'>Home</Link> </li>
@@ -21,8 +22,10 @@ const NavBar = () => {
                 <li className='navItem'>
                    <Link to='/signInForm'> <button style={{borderRadius:'5px'}} className="btn-primary">Log In</button> </Link></li>
             </ul>
+            </div>
         </div>
-        </div>
+            </div>
+
     );
 };
 
