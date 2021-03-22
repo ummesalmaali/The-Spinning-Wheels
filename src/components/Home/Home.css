@@ -1,22 +1,11 @@
-.ridersVehicles{
-    display: flex;
-    justify-content: space-around;
+.home {
+  background-image: url("../../images/assests-img/TransPennine-Express-nova-launch.webp");
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
-.ridersVehicles .vehicles{
-width: 200px;
-background: gray;
-text-align: center;
-height: 200px;
-margin-top: 150px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.ridersVehicles .vehicles img{
-width: 100px;
-}
-.ridersVehicles .vehicles h3{
-position: relative;
-top: 30px;
+.home img {
+  width: 200px;
 }
